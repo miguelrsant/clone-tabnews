@@ -1,5 +1,5 @@
 root = true
 
-[*.{js, jsx, ts, tsx, md, json, nvmrc, gitignore, env, prettierignore}]
+[*]
 indent_style  = space
 indent_size = 2
