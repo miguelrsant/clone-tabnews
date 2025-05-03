@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev",
+    "dev": "npm run service:up && next dev",
+    "service:up": "docker compose -f infra/compose.yaml up -d",
+    "service:down": "docker compose -f infra/compose.yaml up down",
+    "service:stop": "docker compose -f infra/compose.yaml stop",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test:jest": "jest",
